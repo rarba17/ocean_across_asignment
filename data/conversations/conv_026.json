@@ -1,0 +1,91 @@
+{
+  "turn_id": "conv_026",
+  "scenario": "precise_language",
+  "speaker": "user",
+  "text": "To put it succinctly: the proposal fails on three dimensions—cost, timeline, and scope.",
+  "context": [],
+  "scores": [
+    {
+      "facet_id": 1,
+      "name": "Risktaking",
+      "score": 1,
+      "score_label": "Very Low",
+      "confidence": 0.77,
+      "rationale": "Assessed based on whether the speaker takes or endorses uncertain/bold actions."
+    },
+    {
+      "facet_id": 6,
+      "name": "Hesitation",
+      "score": 1,
+      "score_label": "Very Low",
+      "confidence": 0.88,
+      "rationale": "Based on linguistic hedging, uncertainty markers, and unresolved intent."
+    },
+    {
+      "facet_id": 10,
+      "name": "Emotionalism",
+      "score": 2,
+      "score_label": "Low",
+      "confidence": 0.7,
+      "rationale": "Based on presence of emotional language, intensity, and expressiveness."
+    },
+    {
+      "facet_id": 21,
+      "name": "Determinedness",
+      "score": 4,
+      "score_label": "High",
+      "confidence": 0.8,
+      "rationale": "Inferred from commitment markers, goal-directedness, and resolve."
+    },
+    {
+      "facet_id": 26,
+      "name": "Openness",
+      "score": 3,
+      "score_label": "Moderate",
+      "confidence": 0.95,
+      "rationale": "Based on curiosity signals, embrace of novelty, and intellectual breadth."
+    },
+    {
+      "facet_id": 27,
+      "name": "SelfEsteem",
+      "score": 4,
+      "score_label": "High",
+      "confidence": 0.95,
+      "rationale": "Assessed via self-references, confidence language, and self-appraisal."
+    },
+    {
+      "facet_id": 54,
+      "name": "Enthusiasm",
+      "score": 3,
+      "score_label": "Moderate",
+      "confidence": 0.7,
+      "rationale": "Based on energy markers, exclamation, positive framing of activities."
+    },
+    {
+      "facet_id": 63,
+      "name": "Depression Symptoms",
+      "score": 1,
+      "score_label": "Very Low",
+      "confidence": 0.74,
+      "rationale": "Based on hopelessness language, low energy, loss of interest signals."
+    },
+    {
+      "facet_id": 66,
+      "name": "Brevity",
+      "score": 5,
+      "score_label": "Very High",
+      "confidence": 0.75,
+      "rationale": "Measured by information density and absence of redundant language."
+    },
+    {
+      "facet_id": 71,
+      "name": "Creative risk-taking tendency",
+      "score": 3,
+      "score_label": "Moderate",
+      "confidence": 0.93,
+      "rationale": "Based on unconventional ideas, novel combinations, lateral thinking."
+    }
+  ],
+  "model": "Qwen2-7B-Instruct (synthetic)",
+  "note": "Scores are illustrative/synthetic for demonstration purposes."
+}

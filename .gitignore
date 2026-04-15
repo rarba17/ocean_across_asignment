@@ -1,0 +1,17 @@
+venv_cpython
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv
+venv/
+*.egg-info/
+dist/
+build/
+.DS_Store
+*.log
+ollama_models/
+hf_cache/
+.pytest_cache/
+.mypy_cache/
+node_modules/

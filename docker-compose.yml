@@ -1,0 +1,94 @@
+services:
+  # ──────────────────────────────────────────────
+  # LLM backend — Ollama serving Qwen2-7B-Instruct
+  # Swap for vLLM by commenting out this service
+  # and uncommenting the vllm service below.
+  # ──────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ahoum_ollama
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+
+  # Pull the model on first start
+
+  # ──────────────────────────────────────────────
+  # FastAPI evaluation service
+  # ──────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ahoum_api
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_BASE_URL=http://ollama:11434/v1
+      - LLM_MODEL=qwen2:7b-instruct
+      - LLM_API_KEY=ollama
+      - REQUEST_LOGPROBS=false   # Ollama doesn't support logprobs; set true for vLLM
+      - FACETS_JSON_PATH=/app/data/processed/facets_processed.json
+    volumes:
+      - ./data:/app/data:ro
+    depends_on:
+      ollama:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ──────────────────────────────────────────────
+  # Nginx to serve the React UI
+  # ──────────────────────────────────────────────
+  ui:
+    image: nginx:alpine
+    container_name: ahoum_ui
+    ports:
+      - "3000:80"
+    volumes:
+      - ./src/ui:/usr/share/nginx/html:ro
+    depends_on:
+      - api
+
+  # ──────────────────────────────────────────────
+  # (Optional) vLLM backend — uncomment to use instead of Ollama
+  # Requires NVIDIA GPU with CUDA 12+
+  # ──────────────────────────────────────────────
+  # vllm:
+  #   image: vllm/vllm-openai:latest
+  #   container_name: ahoum_vllm
+  #   ports:
+  #     - "8001:8000"
+  #   volumes:
+  #     - hf_cache:/root/.cache/huggingface
+  #   environment:
+  #     - HF_TOKEN=${HF_TOKEN}
+  #   command: >
+  #     --model Qwen/Qwen2-7B-Instruct
+  #     --dtype bfloat16
+  #     --max-model-len 4096
+  #     --enable-prefix-caching
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+
+volumes:
+  ollama_models:
+  # hf_cache:

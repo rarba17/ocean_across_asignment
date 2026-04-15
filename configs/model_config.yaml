@@ -1,0 +1,51 @@
+# configs/model_config.yaml
+# ─────────────────────────────────────────────
+# Ahoum Benchmark — Model Configuration
+# ─────────────────────────────────────────────
+#
+# Supported backends (all OpenAI-compatible):
+#   - Ollama:  http://localhost:11434/v1
+#   - vLLM:    http://localhost:8001/v1
+#   - LM Studio: http://localhost:1234/v1
+
+llm:
+  base_url: "${LLM_BASE_URL:-http://localhost:11434/v1}"
+  model: "${LLM_MODEL:-qwen2:7b-instruct}"
+  api_key: "${LLM_API_KEY:-ollama}"
+  timeout_seconds: 120
+  request_logprobs: false      # Set true for vLLM to enable confidence from logprobs
+
+# ─────────────────────────────────────────────
+# Supported open-weight models (≤ 16B)
+# ─────────────────────────────────────────────
+# Primary (recommended):
+#   Qwen/Qwen2-7B-Instruct        — strong instruction-following, JSON output
+#   meta-llama/Meta-Llama-3-8B-Instruct — good reasoning, widely available
+#
+# Alternatives:
+#   mistralai/Mistral-7B-Instruct-v0.2
+#   microsoft/Phi-3-mini-128k-instruct  (3.8B, fastest)
+#   Qwen/Qwen1.5-14B-Chat              (14B, better quality)
+#
+# NOT allowed (>16B):
+#   Mixtral 8x7B counts as ~46.7B active — use Qwen2-7B instead.
+
+pipeline:
+  batch_size: 50               # Facets per LLM call. Keep ≤ 50 to stay in context.
+  max_concurrent_batches: 5    # Parallel LLM calls per turn
+  max_concurrent_turns: 3      # Parallel turn evaluations in batch endpoint
+  retry_attempts: 3
+  retry_wait_min_seconds: 1
+  retry_wait_max_seconds: 10
+  max_context_turns: 3         # Prior turns to include in the prompt
+
+scoring:
+  score_min: 1
+  score_max: 5
+  default_score_on_error: 3
+  default_confidence_on_error: 0.1
+
+facets:
+  json_path: "data/processed/facets_processed.json"
+  # To add more facets: simply append entries to facets_processed.json.
+  # The pipeline will chunk them automatically. No code changes required.

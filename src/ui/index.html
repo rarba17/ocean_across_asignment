@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AHOUM — Conversation Evaluator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+<style>
+  /* ── Tokens ── */
+  :root {
+    --black:   #000000;
+    --white:   #FFFFFF;
+    --dim:     rgba(0,0,0,0.4);
+    --rule:    rgba(0,0,0,0.15);
+    --dash:    rgba(0,0,0,0.2);
+    --ph:      rgba(0,0,0,0.25);
+    --cond:    'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    --body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* ── Reset ── */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Page shell ── */
+  .page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1100px) { .page { padding: 0 40px; } }
+  @media (max-width: 720px)  { .page { padding: 0 24px; } }
+
+  /* ── Header ── */
+  .site-header {
+    padding: 48px 0 32px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .wordmark {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  .header-right {
+    font-family: var(--body);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dim);
+    white-space: nowrap;
+  }
+  .header-right.online  { color: var(--black); }
+  .header-right.offline { color: var(--dim); }
+
+  .header-rule {
+    width: 100%;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* ── Two-column layout ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 80px;
+    padding-top: 64px;
+    padding-bottom: 120px;
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; gap: 64px; }
+  }
+
+  /* ── Form ── */
+  .form { display: flex; flex-direction: column; gap: 48px; }
+
+  /* Section label: // LABEL // */
+  .slabel {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .field { display: flex; flex-direction: column; }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0;
+    color: var(--black);
+    font-family: var(--body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 8px 0 10px;
+    outline: none;
+    transition: border-bottom-width 0.1s;
+    -webkit-appearance: none;
+    resize: none;
+  }
+
+  input[type="text"]::placeholder,
+  textarea::placeholder {
+    color: var(--ph);
+    font-style: normal;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    border-bottom-width: 2px;
+  }
+
+  textarea           { min-height: 104px; line-height: 1.5; }
+  textarea.ctx-field { min-height: 64px; }
+
+  /* ── Category pills ── */
+  .cat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .cat-pill {
+    font-family: var(--body);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 7px 16px;
+    border-radius: 0;
+    border: 1px solid var(--black);
+    background: transparent;
+    color: var(--black);
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+  .cat-pill:hover  { background: rgba(0,0,0,0.06); }
+  .cat-pill.active { background: var(--black); color: var(--white); }
+
+  .cat-more {
+    font-family: var(--body);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 7px 0;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .cat-more:hover { color: var(--black); }
+
+  /* ── API URL ── */
+  #api-url-row { display: none; }
+
+  /* ── Submit block ── */
+  .submit-block { display: flex; flex-direction: column; gap: 16px; }
+
+  .btn-eval {
+    width: 100%;
+    height: 56px;
+    background: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 0;
+    color: var(--white);
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn-eval:hover   { background: var(--white); color: var(--black); }
+  .btn-eval:disabled {
+    background: transparent;
+    color: var(--dim);
+    border-color: var(--rule);
+    cursor: not-allowed;
+  }
+
+  .mode-link {
+    font-family: var(--body);
+    font-size: 13px;
+    color: var(--dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    letter-spacing: 0.01em;
+  }
+  .mode-link:hover { color: var(--black); }
+
+  /* ── Results panel ── */
+  .results-col { padding-top: 4px; }
+
+  /* Sticky label above results */
+  .results-heading {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-bottom: 16px;
+  }
+
+  .results-panel {
+    border: 1px dashed var(--dash);
+    min-height: 320px;
+    position: relative;
+    transition: border 0.25s;
+  }
+
+  .results-panel.populated {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-left: 2px solid var(--black);
+  }
+
+  .results-empty {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ph);
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+  }
+
+  .results-loading {
+    padding: 48px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--dim);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: var(--cond);
+    font-weight: 700;
+  }
+
+  .results-error {
+    padding: 24px;
+    font-size: 13px;
+    color: var(--black);
+    line-height: 1.5;
+    border-left: 2px solid var(--black);
+  }
+
+  /* Stats strip */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .stat-cell {
+    padding: 16px 16px 14px;
+    border-right: 1px solid var(--rule);
+  }
+  .stat-cell:last-child { border-right: none; }
+
+  .stat-n {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+
+  .stat-l {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-top: 4px;
+  }
+
+  /* Filter strip */
+  .filter-strip {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--rule);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter-strip::-webkit-scrollbar { display: none; }
+
+  .ftab {
+    font-family: var(--body);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dim);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    padding: 10px 14px 8px;
+    margin-bottom: -1px;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .ftab:first-child { padding-left: 16px; }
+  .ftab:hover  { color: var(--black); }
+  .ftab.active { color: var(--black); font-weight: 400; border-bottom-color: var(--black); }
+
+  /* Score rows */
+  .score-list { }
+
+  .group-head {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dim);
+    padding: 14px 16px 4px;
+  }
+
+  .score-row {
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .score-row:last-child { border-bottom: none; }
+
+  .facet-name {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--black);
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  .facet-tag {
+    font-size: 11px;
+    color: var(--dim);
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+  }
+
+  .ratio-text {
+    font-size: 12px;
+    color: var(--dim);
+    line-height: 1.5;
+  }
+
+  .score-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+    padding-top: 1px;
+  }
+
+  .score-digit {
+    font-family: var(--cond);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--black);
+  }
+  .score-digit[data-s="1"],
+  .score-digit[data-s="2"] { color: var(--dim); }
+  .score-digit[data-s="3"] { color: rgba(0,0,0,0.6); }
+
+  .score-word {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dim);
+    text-align: right;
+  }
+
+  .conf-track {
+    width: 36px;
+    height: 1px;
+    background: var(--rule);
+    margin-top: 5px;
+  }
+  .conf-fill {
+    height: 100%;
+    background: var(--black);
+    opacity: 0.3;
+    transition: width 0.5s ease;
+  }
+  .conf-fill.hi { opacity: 0.8; }
+
+  .conf-pct {
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.04em;
+    text-align: right;
+  }
+
+  /* Export */
+  .export-row {
+    padding: 12px 16px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .export-btn {
+    font-family: var(--body);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .export-btn:hover { color: var(--black); }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wordmark">AHOUM</div>
+    <div class="header-right offline" id="api-status">Demo Mode</div>
+  </header>
+  <div class="header-rule"></div>
+
+  <!-- Body -->
+  <div class="layout">
+
+    <!-- Left: Form -->
+    <div class="form">
+
+      <div class="field">
+        <span class="slabel">// Speaker //</span>
+        <input type="text" id="speaker" value="user" placeholder="user / assistant / name">
+      </div>
+
+      <div class="field">
+        <span class="slabel">// Turn Text //</span>
+        <textarea id="turn-text"
+          placeholder="Paste or type the conversation turn to evaluate…"></textarea>
+      </div>
+
+      <div class="field">
+        <span class="slabel">// Prior Context //
+          <span style="font-family:var(--body);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;color:var(--dim)">&nbsp;optional — one turn per line</span>
+        </span>
+        <textarea id="context" class="ctx-field" placeholder="Prior turns…"></textarea>
+      </div>
+
+      <div class="field">
+        <span class="slabel">// Categories //</span>
+        <div class="cat-row" id="cat-row"></div>
+      </div>
+
+      <div class="field" id="api-url-row">
+        <span class="slabel">// API Base URL //</span>
+        <input type="text" id="api-url" value="http://localhost:8000" placeholder="http://localhost:8000">
+      </div>
+
+      <div class="submit-block">
+        <button class="btn-eval" id="eval-btn" onclick="runEvaluation()">
+          <span id="btn-text">Evaluate Turn</span>
+        </button>
+        <button class="mode-link" id="mode-link" onclick="toggleMode()">Switch to live API</button>
+      </div>
+
+    </div>
+
+    <!-- Right: Results -->
+    <div class="results-col">
+      <div class="results-heading">// Results //</div>
+      <div class="results-panel" id="results-panel">
+        <div class="results-empty">
+          Enter a conversation turn<br>and click Evaluate
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────
+// State
+// ─────────────────────────────────────────────
+let mode = 'demo';
+let currentResults = null;
+let catExpanded = false;
+
+const SCORE_LABELS = { 1:'Very Low', 2:'Low', 3:'Moderate', 4:'High', 5:'Very High' };
+
+const CATEGORIES = [
+  'emotion','personality','pragmatics','linguistic_quality',
+  'cognition','social','motivation','leadership',
+  'safety','spiritual','lifestyle','biological'
+];
+
+const CAT_DISPLAY = {
+  emotion:'Emotion', personality:'Personality', pragmatics:'Pragmatics',
+  linguistic_quality:'Linguistic', cognition:'Cognition', social:'Social',
+  motivation:'Motivation', leadership:'Leadership', safety:'Safety',
+  spiritual:'Spiritual', lifestyle:'Lifestyle', biological:'Biological'
+};
+
+const DEFAULT_ACTIVE = new Set(['emotion','personality','pragmatics','linguistic_quality']);
+const COLLAPSED_SHOW = 6;
+let activeCategories = new Set(DEFAULT_ACTIVE);
+
+// ─────────────────────────────────────────────
+// Demo facets & scoring
+// ─────────────────────────────────────────────
+const DEMO_FACETS = [
+  {facet_id:1,  name:'Risktaking',           category:'personality'},
+  {facet_id:6,  name:'Hesitation',           category:'pragmatics'},
+  {facet_id:10, name:'Emotionalism',         category:'emotion'},
+  {facet_id:21, name:'Determinedness',       category:'personality'},
+  {facet_id:26, name:'Openness',             category:'personality'},
+  {facet_id:27, name:'Self-Esteem',          category:'emotion'},
+  {facet_id:44, name:'Mindfulness',          category:'personality'},
+  {facet_id:53, name:'Enthusiasm',           category:'emotion'},
+  {facet_id:59, name:'Justice-Mindedness',   category:'personality'},
+  {facet_id:61, name:'Depression Symptoms',  category:'emotion'},
+  {facet_id:63, name:'Brevity',              category:'linguistic_quality'},
+  {facet_id:66, name:'Creative Risk-Taking', category:'personality'},
+  {facet_id:75, name:'Hardworking',          category:'motivation'},
+  {facet_id:77, name:'Dishonesty',           category:'personality'},
+  {facet_id:92, name:'Collaboration',        category:'social'},
+  {facet_id:94, name:'Social Boldness',      category:'social'},
+  {facet_id:101,name:'Intrinsic Motivation', category:'motivation'},
+  {facet_id:145,name:'Compassion',           category:'social'},
+  {facet_id:187,name:'Frankness',            category:'pragmatics'},
+  {facet_id:197,name:'Sensitivity',          category:'personality'},
+  {facet_id:250,name:'Harmfulness',          category:'safety'},
+  {facet_id:226,name:'Perseverance',         category:'motivation'},
+  {facet_id:326,name:'Impulsivity',          category:'personality'},
+  {facet_id:248,name:'Adaptability',         category:'personality'},
+  {facet_id:266,name:'Originality',          category:'cognition'},
+];
+
+function demoScore(text, facet) {
+  const t = text.toLowerCase();
+  const rules = {
+    1:  () => (t.includes('risk')||t.includes('quit')||t.includes('wing it')) ? 4 : t.includes('careful') ? 1 : 2,
+    6:  () => (t.includes("don't know")||t.includes('maybe')||t.includes('unsure')) ? 4 : t.includes('decided') ? 1 : 2,
+    10: () => (t.includes('feel')||t.includes('tired')||t.includes('sad')||t.includes('terrible')) ? 4 : 2,
+    21: () => (t.includes('decided')||t.includes('absolutely')) ? 4 : 2,
+    26: () => (t.includes('what if')||t.includes('curious')||t.includes('new')) ? 4 : t.includes('routine') ? 2 : 3,
+    27: () => (t.includes('worthless')||t.includes('failure')||t.includes("can't")) ? 1 : t.includes('confident') ? 4 : 3,
+    44: () => (t.includes('aware')||t.includes('present')||t.includes('meditat')) ? 4 : 2,
+    53: () => (t.includes('!')||t.includes('amazing')||t.includes('excited')) ? 4 : t.includes("don't see") ? 1 : 2,
+    59: () => (t.includes('fair')||t.includes('justice')||t.includes("shouldn't")) ? 4 : 2,
+    61: () => (t.includes("don't see the point")||t.includes('failure')||t.includes('hopeless')) ? 5 : t.includes('tired') ? 3 : 1,
+    63: () => text.split(' ').length < 20 ? 4 : text.split(' ').length > 60 ? 2 : 3,
+    66: () => (t.includes('what if')||t.includes('invert')||t.includes('unusual')) ? 5 : 2,
+    75: () => (t.includes('every day')||t.includes('deadline')||t.includes('never missed')) ? 5 : 3,
+    77: () => (t.includes('bends the rules')||t.includes('told him what he wanted')) ? 4 : 1,
+    92: () => (t.includes('team')||t.includes('together')||t.includes('we')) ? 4 : 2,
+    94: () => (t.includes('fired back')||t.includes('my way')) ? 4 : 2,
+    101:() => (t.includes("don't care about the reward")||t.includes('matters')) ? 5 : 3,
+    145:() => (t.includes('could tell')||t.includes('struggling')||t.includes('asked if')) ? 5 : 2,
+    187:() => (t.includes('honestly')||t.includes('direct')||t.includes('crystal clear')) ? 4 : 2,
+    197:() => (t.includes('feel')||t.includes('care')||t.includes('hurt')) ? 4 : 2,
+    250:() => (t.includes('hurt')||t.includes('dangerous')||t.includes('threat')) ? 4 : 1,
+    226:() => (t.includes('keep going')||t.includes('every morning')||t.includes('5 years')) ? 5 : 3,
+    326:() => (t.includes('just wing')||t.includes('fired back')) ? 4 : 1,
+    248:() => (t.includes('adjust')||t.includes('adapt')||t.includes('figure out')) ? 4 : 2,
+    266:() => (t.includes('unexpected')||t.includes('original')||t.includes('invert')) ? 5 : 2,
+  };
+  const fn = rules[facet.facet_id];
+  const score = fn ? fn() : Math.ceil(Math.random() * 3) + 1;
+  const confidence = parseFloat((0.62 + Math.random() * 0.33).toFixed(2));
+  const level = SCORE_LABELS[score].toLowerCase();
+  const phrases = [
+    `Speaker exhibits ${level} ${facet.name.toLowerCase()} based on language and framing.`,
+    `Text shows ${level} markers of ${facet.name.toLowerCase()} through word choice.`,
+    `${SCORE_LABELS[score]} ${facet.name.toLowerCase()} evident in how this turn is expressed.`,
+  ];
+  return {
+    facet_id: facet.facet_id, name: facet.name, category: facet.category,
+    score, confidence, score_label: SCORE_LABELS[score],
+    rationale: phrases[Math.floor(Math.random() * phrases.length)],
+  };
+}
+
+// ─────────────────────────────────────────────
+// Init
+// ─────────────────────────────────────────────
+function initUI() {
+  renderCatPills();
+  checkApiStatus();
+  setInterval(checkApiStatus, 15000);
+}
+
+function renderCatPills() {
+  const row = document.getElementById('cat-row');
+  row.innerHTML = '';
+  const count = catExpanded ? CATEGORIES.length : COLLAPSED_SHOW;
+  const remaining = CATEGORIES.length - COLLAPSED_SHOW;
+
+  CATEGORIES.slice(0, count).forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-pill' + (activeCategories.has(cat) ? ' active' : '');
+    btn.textContent = CAT_DISPLAY[cat];
+    btn.onclick = () => toggleCat(cat);
+    row.appendChild(btn);
+  });
+
+  if (!catExpanded && remaining > 0) {
+    const more = document.createElement('button');
+    more.className = 'cat-more';
+    more.textContent = '+' + remaining + ' more';
+    more.onclick = () => { catExpanded = true; renderCatPills(); };
+    row.appendChild(more);
+  } else if (catExpanded) {
+    const less = document.createElement('button');
+    less.className = 'cat-more';
+    less.textContent = 'Show fewer';
+    less.onclick = () => { catExpanded = false; renderCatPills(); };
+    row.appendChild(less);
+  }
+}
+
+function toggleCat(cat) {
+  if (activeCategories.has(cat)) {
+    if (activeCategories.size > 1) activeCategories.delete(cat);
+  } else {
+    activeCategories.add(cat);
+  }
+  renderCatPills();
+}
+
+function toggleMode() {
+  mode = mode === 'demo' ? 'api' : 'demo';
+  document.getElementById('mode-link').textContent =
+    mode === 'demo' ? 'Switch to live API' : 'Switch to demo mode';
+  document.getElementById('api-url-row').style.display = mode === 'api' ? 'block' : 'none';
+  checkApiStatus();
+}
+
+async function checkApiStatus() {
+  const el = document.getElementById('api-status');
+  if (mode !== 'api') { el.textContent = 'Demo Mode'; el.className = 'header-right'; return; }
+  const base = document.getElementById('api-url').value;
+  try {
+    const r = await fetch(base + '/health', { signal: AbortSignal.timeout(3000) });
+    const d = await r.json();
+    el.textContent = 'API Online \u2014 ' + (d.model || 'Connected');
+    el.className = 'header-right online';
+  } catch {
+    el.textContent = 'API Offline';
+    el.className = 'header-right offline';
+  }
+}
+
+// ─────────────────────────────────────────────
+// Evaluate
+// ─────────────────────────────────────────────
+async function runEvaluation() {
+  const text = document.getElementById('turn-text').value.trim();
+  if (!text) { document.getElementById('turn-text').focus(); return; }
+
+  const btn   = document.getElementById('eval-btn');
+  const panel = document.getElementById('results-panel');
+  btn.disabled = true;
+  document.getElementById('btn-text').textContent = 'Evaluating\u2026';
+  panel.className = 'results-panel';
+  panel.innerHTML = '<div class="results-loading">Processing\u2026</div>';
+
+  try {
+    let results;
+    if (mode === 'demo') {
+      await new Promise(r => setTimeout(r, 700 + Math.random() * 500));
+      const facets = DEMO_FACETS.filter(f => activeCategories.has(f.category));
+      results = {
+        turn_id: 'demo_' + Date.now(),
+        speaker: document.getElementById('speaker').value || 'user',
+        scores: facets.map(f => demoScore(text, f)),
+        total_facets_evaluated: facets.length,
+        latency_ms: Math.floor(700 + Math.random() * 500),
+        model: 'Demo',
+        batch_count: Math.ceil(facets.length / 50),
+      };
+    } else {
+      const base    = document.getElementById('api-url').value;
+      const speaker = document.getElementById('speaker').value || 'user';
+      const context = document.getElementById('context').value.trim().split('\n').filter(Boolean);
+      const resp = await fetch(base + '/evaluate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ turn_id: 'turn_' + Date.now(), speaker, text, context, facet_ids: null }),
+      });
+      if (!resp.ok) throw new Error('API ' + resp.status + ': ' + await resp.text());
+      results = await resp.json();
+      results.scores = results.scores.filter(s => activeCategories.has(s.category));
+    }
+    currentResults = results;
+    renderResults(results);
+  } catch (err) {
+    panel.className = 'results-panel populated';
+    panel.innerHTML = '<div class="results-error">' + err.message + '</div>';
+  } finally {
+    btn.disabled = false;
+    document.getElementById('btn-text').textContent = 'Evaluate Turn';
+  }
+}
+
+// ─────────────────────────────────────────────
+// Render
+// ─────────────────────────────────────────────
+function renderResults(data) {
+  const scores = data.scores || [];
+  const panel  = document.getElementById('results-panel');
+
+  if (!scores.length) {
+    panel.className = 'results-panel';
+    panel.innerHTML = '<div class="results-empty">No scores for selected categories.</div>';
+    return;
+  }
+
+  const avgScore = (scores.reduce((a,b) => a + b.score, 0) / scores.length).toFixed(1);
+  const avgConf  = (scores.reduce((a,b) => a + b.confidence, 0) / scores.length * 100).toFixed(0);
+
+  const byCat = {};
+  scores.forEach(s => { const c = s.category || 'other'; (byCat[c] = byCat[c] || []).push(s); });
+  const catNames = Object.keys(byCat).sort();
+
+  let html = '';
+
+  // Stats
+  html += `<div class="stats-strip">
+    <div class="stat-cell"><div class="stat-n">${scores.length}</div><div class="stat-l">Facets</div></div>
+    <div class="stat-cell"><div class="stat-n">${avgScore}</div><div class="stat-l">Avg Score</div></div>
+    <div class="stat-cell"><div class="stat-n">${avgConf}%</div><div class="stat-l">Confidence</div></div>
+    <div class="stat-cell"><div class="stat-n">${data.latency_ms}</div><div class="stat-l">ms</div></div>
+  </div>`;
+
+  // Filter tabs
+  html += `<div class="filter-strip" id="filter-strip">
+    <button class="ftab active" data-rf="all" onclick="filterResults('all',this)">All</button>`;
+  catNames.forEach(cat => {
+    html += `<button class="ftab" data-rf="${cat}" onclick="filterResults('${cat}',this)">${CAT_DISPLAY[cat]||cat}&thinsp;<span style="opacity:.4">${byCat[cat].length}</span></button>`;
+  });
+  html += `</div>`;
+
+  // Rows
+  html += `<div class="score-list" id="score-list">`;
+  catNames.forEach(cat => {
+    html += `<div class="group-head" data-cat-section="${cat}">${CAT_DISPLAY[cat]||cat}</div>`;
+    byCat[cat].forEach(s => {
+      const hi = s.confidence >= 0.75 ? 'hi' : '';
+      html += `
+        <div class="score-row" data-cat="${s.category||'other'}">
+          <div>
+            <div class="facet-name">${s.name}</div>
+            <div class="facet-tag">${(s.category||'').replace(/_/g,' ')}</div>
+            <div class="ratio-text">${s.rationale||''}</div>
+          </div>
+          <div class="score-col">
+            <div class="score-digit" data-s="${s.score}">${s.score}</div>
+            <div class="score-word">${s.score_label}</div>
+            <div class="conf-track"><div class="conf-fill ${hi}" style="width:${(s.confidence*100).toFixed(0)}%"></div></div>
+            <div class="conf-pct">${(s.confidence*100).toFixed(0)}%</div>
+          </div>
+        </div>`;
+    });
+  });
+  html += `</div>`;
+
+  html += `<div class="export-row"><button class="export-btn" onclick="exportJSON()">Export JSON</button></div>`;
+
+  panel.className = 'results-panel populated';
+  panel.innerHTML = html;
+}
+
+function filterResults(cat, tabEl) {
+  document.querySelectorAll('#filter-strip .ftab').forEach(t => t.classList.remove('active'));
+  tabEl.classList.add('active');
+  document.querySelectorAll('#score-list .score-row').forEach(r => {
+    r.style.display = (cat === 'all' || r.dataset.cat === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('[data-cat-section]').forEach(s => {
+    s.style.display = (cat === 'all' || s.dataset.catSection === cat) ? '' : 'none';
+  });
+}
+
+function exportJSON() {
+  if (!currentResults) return;
+  const blob = new Blob([JSON.stringify(currentResults, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'ahoum_' + (currentResults.turn_id || 'result') + '.json';
+  a.click();
+}
+
+document.addEventListener('DOMContentLoaded', initUI);
+</script>
+</body>
+</html>

@@ -1,0 +1,5588 @@
+[
+  {
+    "facet_id": 1,
+    "name": "Risktaking",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Risktaking expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 2,
+    "name": "Naivety",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Naivety expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 3,
+    "name": "Acidity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Acidity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 4,
+    "name": "Democratic Leadership:",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Democratic Leadership: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 5,
+    "name": "Common-sense",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Common-sense expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 6,
+    "name": "Hesitation",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hesitation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 7,
+    "name": "Discontentment",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Discontentment expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 8,
+    "name": "Overprotectiveness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Overprotectiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 9,
+    "name": "Merriness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Merriness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 10,
+    "name": "Emotionalism",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Emotionalism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 11,
+    "name": "Self-improvement",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Self-improvement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 12,
+    "name": "Statistical Reasoning",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Statistical Reasoning expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 13,
+    "name": "Assertiveness and control in relationships",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Assertiveness and control in relationships expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 14,
+    "name": "Cunningness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Cunningness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 15,
+    "name": "Adventure-Seeking Behavior",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Adventure-Seeking Behavior expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 16,
+    "name": "Compassion Fatigue",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Compassion Fatigue expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 17,
+    "name": "Moroseness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Moroseness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 18,
+    "name": "Specialist",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Specialist expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 19,
+    "name": "Aloofness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Aloofness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 20,
+    "name": "Genuine",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Genuine expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 21,
+    "name": "Determinedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Determinedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 22,
+    "name": "HonestyHumility:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of HonestyHumility: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 23,
+    "name": "Relationship Building Themes:",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Relationship Building Themes: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 24,
+    "name": "Pure Challenge",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Pure Challenge expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 25,
+    "name": "Numerical Reasoning Subcomponents:",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Numerical Reasoning Subcomponents: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 26,
+    "name": "Openness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Openness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 27,
+    "name": "SelfEsteem",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of SelfEsteem expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 28,
+    "name": "Comparing alphanumeric data",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Comparing alphanumeric data expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 29,
+    "name": "Big-heartedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Big-heartedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 30,
+    "name": "Compulsive activities",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Compulsive activities expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 31,
+    "name": "Disrespect",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Disrespect expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 32,
+    "name": "FSH level",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of FSH level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 33,
+    "name": "Self Perspective",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Self Perspective expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 34,
+    "name": "Desperation",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Desperation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 35,
+    "name": "Affiliation Motivation:",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Affiliation Motivation: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 36,
+    "name": "Anatomy knowledge",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Anatomy knowledge expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 37,
+    "name": "Passive-Aggressive",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Passive-Aggressive expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 38,
+    "name": "Presence of Spiritual Pain",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Presence of Spiritual Pain expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 39,
+    "name": "Role of Spirituality in Community Involvement",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Role of Spirituality in Community Involvement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 40,
+    "name": "Structure",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Structure expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 41,
+    "name": "Eco-tourism trips",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Eco-tourism trips expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 42,
+    "name": "Chivalrousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Chivalrousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 43,
+    "name": "Pilgrimage participation count",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Pilgrimage participation count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 44,
+    "name": "Mindfulness facet: Observing",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Mindfulness facet: Observing expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 45,
+    "name": "Submissiveness",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Submissiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 46,
+    "name": "Training-cycle length",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Training-cycle length expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 47,
+    "name": "Sensitiveness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Sensitiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 48,
+    "name": "Negative Affect Frequency",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Negative Affect Frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 49,
+    "name": "Innovation and Creativity Components:",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Innovation and Creativity Components: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 50,
+    "name": "Achievement Motivation:",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Achievement Motivation: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 51,
+    "name": "Feedback-giving frequency",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Feedback-giving frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 52,
+    "name": "Dance-cardio sessions",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Dance-cardio sessions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 53,
+    "name": "Enthusiasm",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Enthusiasm expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 54,
+    "name": "Psychological construct: Social Desirability tendency",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Social Desirability tendency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 55,
+    "name": "Inattentiveness",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Inattentiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 56,
+    "name": "Unassertiveness",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Unassertiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 57,
+    "name": "Decision-making decisiveness",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Decision-making decisiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 58,
+    "name": "Sense-of-coherence score",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Sense-of-coherence score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 59,
+    "name": "Justice-mindedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Justice-mindedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 60,
+    "name": "Subscription count",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Subscription count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 61,
+    "name": "Depression Symptoms",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Depression Symptoms expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 62,
+    "name": "Spatial perception",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Spatial perception expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 63,
+    "name": "Brevity",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Brevity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 64,
+    "name": "Orderliness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Orderliness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 65,
+    "name": "Multiculturalism",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Multiculturalism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 66,
+    "name": "Creative risk-taking tendency",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Creative risk-taking tendency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 67,
+    "name": "Inefficiency",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Inefficiency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 68,
+    "name": "Network basics",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Network basics expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 69,
+    "name": "Alphabetical filing skills",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Alphabetical filing skills expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 70,
+    "name": "Work Styles",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Work Styles expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 71,
+    "name": "Character strength: Perseverance",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Character strength: Perseverance expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 72,
+    "name": "Competition",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Competition expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 73,
+    "name": "Logical Sequence Identification",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Logical Sequence Identification expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 74,
+    "name": "Sustainable-transport usage",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sustainable-transport usage expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 75,
+    "name": "Hardworking",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hardworking expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 76,
+    "name": "Emotional-intelligence measure: Impulsiveness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Emotional-intelligence measure: Impulsiveness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 77,
+    "name": "Dishonesty",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Dishonesty expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 78,
+    "name": "Preferred epistemology",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Preferred epistemology expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 79,
+    "name": "Memory for Sounds",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Memory for Sounds expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 80,
+    "name": "Sportsmanship rating",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sportsmanship rating expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 81,
+    "name": "Immaturity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Immaturity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 82,
+    "name": "Health-literacy level",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Health-literacy level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 83,
+    "name": "Estimating Calculations",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Estimating Calculations expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 84,
+    "name": "Depression: Feelings of sadness and hopelessness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Depression: Feelings of sadness and hopelessness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 85,
+    "name": "Synthesis of information",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Synthesis of information expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 86,
+    "name": "Leadership Potential:",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Leadership Potential: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 87,
+    "name": "Ethical standards",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Ethical standards expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 88,
+    "name": "High-spiritedness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of High-spiritedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 89,
+    "name": "Critical reasoning",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Critical reasoning expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 90,
+    "name": "Sleep-disorder diagnosis",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sleep-disorder diagnosis expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 91,
+    "name": "Listening Skills Subcomponents:",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Listening Skills Subcomponents: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 92,
+    "name": "Collaboration",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Collaboration expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 93,
+    "name": "Precision of Movements",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Precision of Movements expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 94,
+    "name": "Social Boldness",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Social Boldness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 95,
+    "name": "Auditory memory",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Auditory memory expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 96,
+    "name": "Psychomotor Ability Subcomponents:",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Psychomotor Ability Subcomponents: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 97,
+    "name": "Organized lifestyle",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Organized lifestyle expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 98,
+    "name": "Skill-endorsements count",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Skill-endorsements count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 99,
+    "name": "Mysteriousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Mysteriousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 100,
+    "name": "Cultural Identity",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Cultural Identity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 101,
+    "name": "Intrinsic Motivation",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Intrinsic Motivation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 102,
+    "name": "Impartial-mindedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Impartial-mindedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 103,
+    "name": "Burnout Symptoms",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Burnout Symptoms expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 104,
+    "name": "Holiness",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Holiness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 105,
+    "name": "Selfcontrol",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Selfcontrol expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 106,
+    "name": "SelfDirectedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of SelfDirectedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 107,
+    "name": "Encouraging participation",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Encouraging participation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 108,
+    "name": "Impracticalness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Impracticalness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 109,
+    "name": "Meeting Deadlines",
+    "category": "personality",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Meeting Deadlines expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 110,
+    "name": "Data Analysis",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Data Analysis expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 111,
+    "name": "Social Interaction Skills",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Social Interaction Skills expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 112,
+    "name": "Psychoticism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychoticism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 113,
+    "name": "Ethical leadership rating",
+    "category": "leadership",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Ethical leadership rating expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 114,
+    "name": "Slothfulness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Slothfulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 115,
+    "name": "Happiness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Happiness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 116,
+    "name": "Contentment Levels",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Contentment Levels expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 117,
+    "name": "Neuroticism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Neuroticism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 118,
+    "name": "Desire for excellence",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Desire for excellence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 119,
+    "name": "Perceiving",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Perceiving expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 120,
+    "name": "Liberalism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Liberalism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 121,
+    "name": "Inversion comfort level",
+    "category": "personality",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Inversion comfort level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 122,
+    "name": "Affection",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Affection expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 123,
+    "name": "Numeric Filing Skills",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Numeric Filing Skills expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 124,
+    "name": "Martyrdom",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Martyrdom expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 125,
+    "name": "Parathyroid-hormone level",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Parathyroid-hormone level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 126,
+    "name": "Seeking approval",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Seeking approval expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 127,
+    "name": "Judging (J):",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Judging (J): expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 128,
+    "name": "Big Five facet Openness \u2013 Artistic Interests",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Big Five facet Openness \u2013 Artistic Interests expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 129,
+    "name": "Psychological construct: Operant-Learning rate",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Operant-Learning rate expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 130,
+    "name": "Psychological construct: Need for Achievement level",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Need for Achievement level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 131,
+    "name": "Cantankerousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Cantankerousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 132,
+    "name": "Material properties knowledge",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Material properties knowledge expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 133,
+    "name": "Hostility",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hostility expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 134,
+    "name": "Independence",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Independence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 135,
+    "name": "Sufi practice: Sufi retreat attendance count",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sufi practice: Sufi retreat attendance count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 136,
+    "name": "Chromatin-accessibility score",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Chromatin-accessibility score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 137,
+    "name": "Spiritual virtue: Humility practice index",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Spiritual virtue: Humility practice index expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 138,
+    "name": "I Ching hexagram 36 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 36 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 139,
+    "name": "Well-being component: Engagement",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Well-being component: Engagement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 140,
+    "name": "Need for social interaction",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Need for social interaction expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 141,
+    "name": "Peer-collaboration hours",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Peer-collaboration hours expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 142,
+    "name": "Arts and Humanities",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Arts and Humanities expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 143,
+    "name": "Religious practice: Quran khatam cycles per year",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Religious practice: Quran khatam cycles per year expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 144,
+    "name": "Bah\u00e1\u2019\u00ed spiritual metric: Ridv\u00e1n festival participation",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Bah\u00e1\u2019\u00ed spiritual metric: Ridv\u00e1n festival participation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 145,
+    "name": "Compassion",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Compassion expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 146,
+    "name": "Information Retention",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Information Retention expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 147,
+    "name": "Eye-contact duration",
+    "category": "pragmatics",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Eye-contact duration expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 148,
+    "name": "Self-righteousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Self-righteousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 149,
+    "name": "General Mood and Attitude",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of General Mood and Attitude expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 150,
+    "name": "Serotonin transporter availability",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Serotonin transporter availability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 151,
+    "name": "Contribution to Group Goals",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Contribution to Group Goals expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 152,
+    "name": "Dignity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Dignity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 153,
+    "name": "HEXACO Personality Inventory Facets:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of HEXACO Personality Inventory Facets: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 154,
+    "name": "Evaluating Solutions",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Evaluating Solutions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 155,
+    "name": "Input",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Input expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 156,
+    "name": "Discreteness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Discreteness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 157,
+    "name": "Energy-healing practice: Reiki sessions / year",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Energy-healing practice: Reiki sessions / year expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 158,
+    "name": "Astrology: Rising sign is Scorpio",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Astrology: Rising sign is Scorpio expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 159,
+    "name": "Character strength: Social Intelligence",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Character strength: Social Intelligence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 160,
+    "name": "Bravery",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Bravery expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 161,
+    "name": "Childhood Experiences",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Childhood Experiences expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 162,
+    "name": "Data-sharing consent level",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Data-sharing consent level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 163,
+    "name": "Vision-check frequency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Vision-check frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 164,
+    "name": "Physical-violence exposure",
+    "category": "safety",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Physical-violence exposure expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 165,
+    "name": "Macronutrient ratio: fat",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Macronutrient ratio: fat expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 166,
+    "name": "Cooking and Culinary Arts",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Cooking and Culinary Arts expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 167,
+    "name": "Language use",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Language use expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 168,
+    "name": "Dance-style mastery diversity",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Dance-style mastery diversity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 169,
+    "name": "Satya Adherence",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Satya Adherence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 170,
+    "name": "Ethnocentrism",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Ethnocentrism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 171,
+    "name": "Emotional Boundaries",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Emotional Boundaries expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 172,
+    "name": "Creativity in solutions",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Creativity in solutions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 173,
+    "name": "Psychological construct: Hope scale",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Hope scale expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 174,
+    "name": "Practice frequency: Walking meditation",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Practice frequency: Walking meditation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 175,
+    "name": "Depression (DEP)",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Depression (DEP) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 176,
+    "name": "Understanding Mathematical Concepts",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Understanding Mathematical Concepts expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 177,
+    "name": "Hypomania (Ma)",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hypomania (Ma) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 178,
+    "name": "Goal-Directed Behavior",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Goal-Directed Behavior expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 179,
+    "name": "Depth of Emotional Connections",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Depth of Emotional Connections expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 180,
+    "name": "Binding foundations index",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Binding foundations index expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 181,
+    "name": "Ego Dissolution Frequency",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Ego Dissolution Frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 182,
+    "name": "Activator: Turning thoughts into action",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Activator: Turning thoughts into action expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 183,
+    "name": "Gnostic spiritual metric: Archon meditation frequency",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Gnostic spiritual metric: Archon meditation frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 184,
+    "name": "Exemplariness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Exemplariness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 185,
+    "name": "Moral and Ethical Parameters:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Moral and Ethical Parameters: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 186,
+    "name": "Submission:",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Submission: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 187,
+    "name": "Frankness",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Frankness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 188,
+    "name": "Psychological construct: Psychological Safety climate",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Psychological Safety climate expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 189,
+    "name": "Psychological construct: Self-Compassion total",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Self-Compassion total expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 190,
+    "name": "Psychological construct: Executive-Function composite",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Executive-Function composite expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 191,
+    "name": "Rebelliousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Rebelliousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 192,
+    "name": "Volunteer Work",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Volunteer Work expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 193,
+    "name": "Intellect",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Intellect expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 194,
+    "name": "Use of Mathematical Formulas",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Use of Mathematical Formulas expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 195,
+    "name": "Coarseness",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Coarseness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 196,
+    "name": "Behavioral Tendencies and Subcomponents:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Behavioral Tendencies and Subcomponents: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 197,
+    "name": "Sensitivity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Sensitivity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 198,
+    "name": "Divided Attention Ability",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Divided Attention Ability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 199,
+    "name": "Psychological construct: Acculturative Stress score",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Acculturative Stress score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 200,
+    "name": "Dauntlessness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Dauntlessness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 201,
+    "name": "Concreteness",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Concreteness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 202,
+    "name": "Hysteria (Hy)",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hysteria (Hy) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 203,
+    "name": "Jewish spiritual metric: Sukkot lulav-shaking days",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Jewish spiritual metric: Sukkot lulav-shaking days expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 204,
+    "name": "Sentence Structure",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Sentence Structure expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 205,
+    "name": "Esteem Needs",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Esteem Needs expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 206,
+    "name": "Understanding mechanical concepts",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Understanding mechanical concepts expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 207,
+    "name": "Auditory Memory Recall",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Auditory Memory Recall expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 208,
+    "name": "Storytelling proficiency",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Storytelling proficiency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 209,
+    "name": "Music-lessons years",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Music-lessons years expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 210,
+    "name": "Warmheartedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Warmheartedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 211,
+    "name": "Self-effacement",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Self-effacement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 212,
+    "name": "Outspokenness",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Outspokenness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 213,
+    "name": "Sleep-environment temperature",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sleep-environment temperature expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 214,
+    "name": "Comprehension of spoken information",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Comprehension of spoken information expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 215,
+    "name": "Blissfulness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Blissfulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 216,
+    "name": "Sequential Memory Recall",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sequential Memory Recall expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 217,
+    "name": "Withdrawnness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Withdrawnness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 218,
+    "name": "Hindu spiritual metric: Yoga discipline hours / week",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Hindu spiritual metric: Yoga discipline hours / week expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 219,
+    "name": "Conservatism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Conservatism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 220,
+    "name": "Adaptability and Flexibility Subcomponents:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Adaptability and Flexibility Subcomponents: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 221,
+    "name": "Hindu spiritual metric: Vrata vows observed / year",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Hindu spiritual metric: Vrata vows observed / year expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 222,
+    "name": "Ardency",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Ardency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 223,
+    "name": "Aesthetic Appreciation",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Aesthetic Appreciation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 224,
+    "name": "Transactional Leadership:",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Transactional Leadership: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 225,
+    "name": "Value orientation: Universalism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Value orientation: Universalism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 226,
+    "name": "Perseverance",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Perseverance expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 227,
+    "name": "Regularity of Self-Reflection",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Regularity of Self-Reflection expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 228,
+    "name": "Controlling Reactions",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Controlling Reactions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 229,
+    "name": "Psychological construct: Cultural Intelligence \u2013 Behavioral",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Cultural Intelligence \u2013 Behavioral expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 230,
+    "name": "Metabolic Rate (Low or High)",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Metabolic Rate (Low or High) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 231,
+    "name": "Dietary Habits",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Dietary Habits expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 232,
+    "name": "Significance: Desire to make an impact",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Significance: Desire to make an impact expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 233,
+    "name": "Psychological construct: Resilience-Trait score",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Resilience-Trait score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 234,
+    "name": "Boredom Susceptibility",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Boredom Susceptibility expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 235,
+    "name": "Psychological construct: Consummatory Pleasure scale",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Consummatory Pleasure scale expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 236,
+    "name": "Leadership Styles and Behaviors:",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Leadership Styles and Behaviors: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 237,
+    "name": "I Ching hexagram 5 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 5 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 238,
+    "name": "Macronutrient ratio: carbs",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Macronutrient ratio: carbs expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 239,
+    "name": "Passport-stamps count",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Passport-stamps count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 240,
+    "name": "Local-food sourcing %",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Local-food sourcing % expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 241,
+    "name": "Patient care orientation",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Patient care orientation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 242,
+    "name": "Soft-skill training hours",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Soft-skill training hours expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 243,
+    "name": "Graffiti appreciation",
+    "category": "personality",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Graffiti appreciation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 244,
+    "name": "Preference for Home-Cooked vs Restaurant Meals",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Preference for Home-Cooked vs Restaurant Meals expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 245,
+    "name": "Immune-response age",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Immune-response age expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 246,
+    "name": "Social-cognition variable: Cognitive Empathy",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Social-cognition variable: Cognitive Empathy expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 247,
+    "name": "Kink-interest diversity",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Kink-interest diversity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 248,
+    "name": "Adaptability and Flexibility:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Adaptability and Flexibility: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 249,
+    "name": "Judging Consequences",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Judging Consequences expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 250,
+    "name": "Harmfulness",
+    "category": "safety",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Harmfulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 251,
+    "name": "Affinity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Affinity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 252,
+    "name": "Abasement",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Abasement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 253,
+    "name": "Chronic pain presence",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Chronic pain presence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 254,
+    "name": "Discernment practice hours / week",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Discernment practice hours / week expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 255,
+    "name": "Initiative",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Initiative expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 256,
+    "name": "Courageousness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Courageousness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 257,
+    "name": "Joyfulness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Joyfulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 258,
+    "name": "Suspicion",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Suspicion expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 259,
+    "name": "Basophil count",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Basophil count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 260,
+    "name": "Attachment avoidance score",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Attachment avoidance score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 261,
+    "name": "Time Orientation End Points:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Time Orientation End Points: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 262,
+    "name": "Brazenness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Brazenness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 263,
+    "name": "Talkativeness",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Talkativeness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 264,
+    "name": "Equitableness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Equitableness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 265,
+    "name": "Ideas generated/day",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Ideas generated/day expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 266,
+    "name": "Originality",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Originality expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 267,
+    "name": "Fearfulness: Fear of physical dangers",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Fearfulness: Fear of physical dangers expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 268,
+    "name": "Dance rehearsal hours/week",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Dance rehearsal hours/week expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 269,
+    "name": "Practice frequency: Mantra meditation",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Practice frequency: Mantra meditation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 270,
+    "name": "Public-transport km/week",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Public-transport km/week expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 271,
+    "name": "Social Desirability Bias",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Social Desirability Bias expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 272,
+    "name": "I Ching hexagram 43 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 43 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 273,
+    "name": "Disagreeableness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Disagreeableness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 274,
+    "name": "Participation in Community Activities",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Participation in Community Activities expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 275,
+    "name": "Impudence",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Impudence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 276,
+    "name": "Analogies",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Analogies expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 277,
+    "name": "Clumsiness",
+    "category": "personality",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Clumsiness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 278,
+    "name": "Tendency Toward Compromise or Confrontation",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Tendency Toward Compromise or Confrontation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 279,
+    "name": "I Ching hexagram 19 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 19 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 280,
+    "name": "Robotics-interaction frequency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Robotics-interaction frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 281,
+    "name": "Casual lifestyle",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Casual lifestyle expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 282,
+    "name": "Collectedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Collectedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 283,
+    "name": "Reliance on context",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Reliance on context expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 284,
+    "name": "Delegation skills",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Delegation skills expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 285,
+    "name": "I Ching hexagram 49 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 49 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 286,
+    "name": "Managing emotions",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Managing emotions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 287,
+    "name": "Scripture memorization verses",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Scripture memorization verses expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 288,
+    "name": "Conventional",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Conventional expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 289,
+    "name": "Hindu spiritual metric: Bhagavad-Gita study hours",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Hindu spiritual metric: Bhagavad-Gita study hours expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 290,
+    "name": "Open-source contributions",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Open-source contributions expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 291,
+    "name": "Psychological construct: Social Conformity tendency",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Social Conformity tendency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 292,
+    "name": "Individuality",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Individuality expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 293,
+    "name": "I Ching hexagram 22 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 22 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 294,
+    "name": "Attachment style: Secure",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Attachment style: Secure expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 295,
+    "name": "Intelligence Quotient (IQ)",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Intelligence Quotient (IQ) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 296,
+    "name": "Blog-subscriber count",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Blog-subscriber count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 297,
+    "name": "Non-Verbal Communication Skills",
+    "category": "pragmatics",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Non-Verbal Communication Skills expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 298,
+    "name": "Drug-use history",
+    "category": "safety",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Drug-use history expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 299,
+    "name": "Commute time/day",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Commute time/day expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 300,
+    "name": "Decision-making speed",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Decision-making speed expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 301,
+    "name": "Psychological construct: Excuse-Making tendency",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Excuse-Making tendency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 302,
+    "name": "Peer-to-peer lending usage",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Peer-to-peer lending usage expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 303,
+    "name": "Psychological construct: Eye-Contact avoidance score",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Eye-Contact avoidance score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 304,
+    "name": "Social-cognition variable: Faux Pas Recognition accuracy",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Social-cognition variable: Faux Pas Recognition accuracy expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 305,
+    "name": "Conscientiousness (C):",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Conscientiousness (C): expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 306,
+    "name": "Use of Nature as a Stress Reliever",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Use of Nature as a Stress Reliever expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 307,
+    "name": "Attitude toward learning",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Attitude toward learning expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 308,
+    "name": "Conscientiousness Facets:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Conscientiousness Facets: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 309,
+    "name": "Honesty-humility trait score",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Honesty-humility trait score expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 310,
+    "name": "Digital-nomad months",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Digital-nomad months expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 311,
+    "name": "Religious coping \u2013 Negative",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Religious coping \u2013 Negative expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 312,
+    "name": "Snacking Behavior",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Snacking Behavior expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 313,
+    "name": "Aura-color perception",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Aura-color perception expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 314,
+    "name": "Sacred text engagement: Zohar (Kabbalah) study hours",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sacred text engagement: Zohar (Kabbalah) study hours expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 315,
+    "name": "Motivational Drivers:",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Motivational Drivers: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 316,
+    "name": "Cloud-backup frequency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Cloud-backup frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 317,
+    "name": "Learning Style",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Learning Style expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 318,
+    "name": "Islamic practice: Seerah study hours",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Islamic practice: Seerah study hours expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 319,
+    "name": "Safety compliance",
+    "category": "safety",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Safety compliance expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 320,
+    "name": "Sensationalism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Sensationalism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 321,
+    "name": "Nationality",
+    "category": "social",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Nationality expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 322,
+    "name": "Drollness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Drollness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 323,
+    "name": "Cooperation",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Cooperation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 324,
+    "name": "Breakfast-skipping frequency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Breakfast-skipping frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 325,
+    "name": "Sikh spiritual metric: Kirtan participation frequency",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sikh spiritual metric: Kirtan participation frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 326,
+    "name": "Impulsivity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Impulsivity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 327,
+    "name": "Museum visits/year",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Museum visits/year expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 328,
+    "name": "Choir participation years",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Choir participation years expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 329,
+    "name": "Delegation Ability",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Delegation Ability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 330,
+    "name": "Kabbalah sephira balance: Tiferet",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Kabbalah sephira balance: Tiferet expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 331,
+    "name": "Desire to influence others",
+    "category": "motivation",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Desire to influence others expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 332,
+    "name": "Vivacity",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Vivacity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 333,
+    "name": "Genialness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Genialness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 334,
+    "name": "Cognitive measure: Working Memory Index",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Cognitive measure: Working Memory Index expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 335,
+    "name": "Ethical practices",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Ethical practices expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 336,
+    "name": "New-Age spiritual metric: Channeling sessions / year",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of New-Age spiritual metric: Channeling sessions / year expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 337,
+    "name": "Civility",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Civility expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 338,
+    "name": "Sleep Apnea",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sleep Apnea expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 339,
+    "name": "Classiness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Classiness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 340,
+    "name": "Control over situations",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Control over situations expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 341,
+    "name": "Time outdoors/day (h)",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Time outdoors/day (h) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 342,
+    "name": "Effeteness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Effeteness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 343,
+    "name": "Polygenic risk: cardiovascular disease",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Polygenic risk: cardiovascular disease expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 344,
+    "name": "Psychological construct: Identity Diffusion level",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Identity Diffusion level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 345,
+    "name": "Learning through movement",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Learning through movement expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 346,
+    "name": "Caffeine sensitivity gene",
+    "category": "biological",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Caffeine sensitivity gene expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 347,
+    "name": "Hatefulness",
+    "category": "safety",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Hatefulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 348,
+    "name": "Persistence:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Persistence: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 349,
+    "name": "Psychological construct: Perfectionistic Strivings",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Psychological construct: Perfectionistic Strivings expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 350,
+    "name": "Wake-time consistency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Wake-time consistency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 351,
+    "name": "Numerical Reasoning:",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Numerical Reasoning: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 352,
+    "name": "Social-cognition variable: Mentalizing network activation",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Social-cognition variable: Mentalizing network activation expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 353,
+    "name": "Patriotism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Patriotism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 354,
+    "name": "Leadership Styles:",
+    "category": "leadership",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Leadership Styles: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 355,
+    "name": "Servility",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Servility expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 356,
+    "name": "I Ching hexagram 24 resonance level",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of I Ching hexagram 24 resonance level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 357,
+    "name": "Enneagram Personality Types:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Enneagram Personality Types: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 358,
+    "name": "Stress Recovery Ability",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Stress Recovery Ability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 359,
+    "name": "Troubleshooting technical issues",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Troubleshooting technical issues expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 360,
+    "name": "Defense-mechanism tendency: Introjection",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Defense-mechanism tendency: Introjection expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 361,
+    "name": "Irritability",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Irritability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 362,
+    "name": "Travel-companions diversity",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Travel-companions diversity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 363,
+    "name": "Sacred text engagement: Quran surahs memorized",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sacred text engagement: Quran surahs memorized expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 364,
+    "name": "Trust in others",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Trust in others expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 365,
+    "name": "Gamified-finance-app usage",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Gamified-finance-app usage expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 366,
+    "name": "Buddhist practice: Eightfold Path \u2013 Right Intention level",
+    "category": "spiritual",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Buddhist practice: Eightfold Path \u2013 Right Intention level expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 367,
+    "name": "Caffeine intake (mg/day)",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Caffeine intake (mg/day) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 368,
+    "name": "Comfort with Vulnerability",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Comfort with Vulnerability expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 369,
+    "name": "Anticipativeness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Anticipativeness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 370,
+    "name": "Additional Common Parameters and Their End Points:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Additional Common Parameters and Their End Points: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 371,
+    "name": "Avoiding:",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Avoiding: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 372,
+    "name": "Home-security-system presence",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Home-security-system presence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 373,
+    "name": "HEXACO domain: Honesty-Humility",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of HEXACO domain: Honesty-Humility expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 374,
+    "name": "Eating Habits (Home-Cooked vs. Eating Out)",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Eating Habits (Home-Cooked vs. Eating Out) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 375,
+    "name": "Decision-Making Confidence",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Decision-Making Confidence expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 376,
+    "name": "Alignment with societal roles",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Alignment with societal roles expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 377,
+    "name": "Connectedness: Belief in interconnections",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Connectedness: Belief in interconnections expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 378,
+    "name": "Quirkiness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Quirkiness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 379,
+    "name": "Creative resilience",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Creative resilience expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 380,
+    "name": "Rapid cognitive processing",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Rapid cognitive processing expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 381,
+    "name": "Cordiality",
+    "category": "pragmatics",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Cordiality expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 382,
+    "name": "Types of Mindfulness Techniques Used",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Types of Mindfulness Techniques Used expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 383,
+    "name": "Economic reasoning",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Economic reasoning expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 384,
+    "name": "Conformity",
+    "category": "social",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Conformity expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 385,
+    "name": "Pet-enrichment activities count",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Pet-enrichment activities count expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 386,
+    "name": "Aestheticism",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Aestheticism expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 387,
+    "name": "Type of Support Preferred (Emotional vs. Practical)",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Type of Support Preferred (Emotional vs. Practical) expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 388,
+    "name": "Mental Arithmetic Speed",
+    "category": "cognition",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Mental Arithmetic Speed expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 389,
+    "name": "Patience: Resistance to anger",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Patience: Resistance to anger expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 390,
+    "name": "Flawlessness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Flawlessness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 391,
+    "name": "Self-Efficacy",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Self-Efficacy expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 392,
+    "name": "Computer Skills:",
+    "category": "cognition",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Computer Skills: expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 393,
+    "name": "Jewish spiritual metric: Shabbat candle-lighting consistency",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Jewish spiritual metric: Shabbat candle-lighting consistency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 394,
+    "name": "Spelling Accuracy",
+    "category": "linguistic_quality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Spelling Accuracy expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 395,
+    "name": "Sufi practice: Dhikr repetitions / day",
+    "category": "spiritual",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Sufi practice: Dhikr repetitions / day expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 396,
+    "name": "Peacefulness",
+    "category": "emotion",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Peacefulness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 397,
+    "name": "Doggedness",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Doggedness expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 398,
+    "name": "Decency",
+    "category": "personality",
+    "is_observable_in_text": true,
+    "prompt_hint": "Evaluate the degree of Decency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  {
+    "facet_id": 399,
+    "name": "Processed-food frequency",
+    "category": "lifestyle",
+    "is_observable_in_text": false,
+    "prompt_hint": "Evaluate the degree of Processed-food frequency expressed in this conversation turn.",
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    }
+  }
+]

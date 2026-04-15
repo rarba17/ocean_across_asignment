@@ -93,24 +93,6 @@ The `is_observable_in_text` flag lets callers filter to facets that are actually
 
 ---
 
-## Hard Constraints Checklist
-
-| Constraint | Status | Implementation |
-|---|---|---|
-| No one-shot prompts | ✅ | 4-turn multi-shot: `system → few-shot user → few-shot assistant → query` (`scorer.py:132`) |
-| Open-weights ≤ 16B | ✅ | Qwen2-7B-Instruct default; Llama 3-8B listed in `configs/model_config.yaml` |
-| Scales to ≥ 5 000 facets without redesign | ✅ | `chunk_facets()` in `preprocessor.py` batches arbitrarily many facets — adding facets only adds more batches |
-
-### Brownie points
-
-| | Status |
-|---|---|
-| Confidence per score | ✅ via logprobs (`scorer.py:_inject_confidence`); falls back to LLM self-reported confidence when logprobs unavailable (Ollama) |
-| Dockerised baseline | ✅ `Dockerfile` + `docker-compose.yml` (Ollama + API + Nginx UI) |
-| Sample UI | ✅ `src/ui/index.html` — single-page evaluator served on port 3000 |
-
----
-
 ## Quick Start (Docker)
 
 **Prerequisites:** Docker Engine 25+ with the Compose v2 plugin.
